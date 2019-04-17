@@ -24,7 +24,7 @@ pip install marshmallow-sqlalchemy
 
 
 5. Now, get the code from this repository by cloning it into
-a desire location. Type "git clone this_git_url".
+a desired location. Type "git clone this_git_url".
 
 6. Once you have the code opened up. Go into the python interactive
 shell and type 
@@ -56,5 +56,14 @@ And press Send on the POST option.
 -To get menu by id: localhost:5000/menu/1 (1 is the id here)
 
 -To delete a menu: localhost:5000/menu Option DELETE
+
+-To update a menu: localhost:5000/menu Option PUT with the following in the textbox
+
+{
+
+    "name" : "Your updated name"
+
+}
+
 
 Done!
