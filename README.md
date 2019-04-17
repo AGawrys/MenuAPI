@@ -27,18 +27,24 @@ pip install marshmallow-sqlalchemy
 a desired location. Type "git clone this_git_url".
 
 6. Once you have the code opened up. Go into the python interactive
-shell and type 
+shell  (by typing "py" or "python" in the command prompt) and type 
 
 "from MenuServer import db"
 
 "db.create_all()"
+ 
+ "exit()" 
 
 7. I used postman (https://www.getpostman.com/postman) to simulate. 
 Simply open up postman, make sure the param is your
 localhost (ex. localhost:5000/menu), you are on the "body" tab, with the raw button toggled, and
 have JSON/Application selected in the drop down menu below params.
 
-8. Choose the option on the side of the params (GET, POST, PUT, DELETE) and 
+8. Run the python file from the command prompt with
+
+python MenuServer.py
+
+9. Go to your postman and choose the option on the side of the params (GET, POST, PUT, DELETE) and 
 enter the corresponding link. 
 
 -To create menu write a desired menu name in the textbox
